@@ -13,6 +13,16 @@
 .text-color-3 {
   color: rgba(0, 0, 0, 0.5);
 }
+.btn-2 {
+  width: 270px;
+  height: 50px;
+  background-color: rgb(233, 90, 8);
+  color: white;
+  border: none;
+  padding: 19px 50px 19px 50px;
+  font-size: 16px;
+  font-weight: 600px;
+}
 
 /* nav style  */
 .nav-section {
@@ -86,6 +96,76 @@
   width: 100%;
 }
 
+/* our plant style */
+.plants-section {
+  text-align: center;
+  margin: 0px auto;
+  max-width: 1140px;
+  margin-top: 120px;
+}
+.plants-section-description h4 {
+  font-family: Noto Serif;
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 68px;
+}
+.plants-section-description p {
+  font-family: Inter;
+  font-weight: 400;
+}
+
+/* card-section */
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  max-width: 270px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 49px;
+}
+.card img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+.card h6 {
+  color: rgb(17, 17, 17);
+  font-family: Inter;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.card h5 {
+  color: rgb(17, 17, 17);
+  font-family: Inter;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.btn-primary {
+  background: rgb(233, 90, 8);
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 26px 50px 26px 50px;
+  border: none;
+  border-radius: 3px;
+}
+
 /* responsive style  */
 
 @media screen and (max-width: 576px) {
@@ -118,5 +198,14 @@
   }
   .banner-img {
     padding-top: 30px;
+  }
+  /* card section */
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .btn-primary {
+    padding: 10px 7px;
   }
 }
