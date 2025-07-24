@@ -168,7 +168,7 @@
   height: 597px;
   gap: 60px;
   margin-top: 200px;
-  margin: 200px auto;
+  margin: 100px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -191,6 +191,100 @@
 .plant-lover-description li {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/* latest-deal-style */
+.latest-deal-description {
+  text-align: center;
+  margin: 0px auto;
+  max-width: 1140px;
+  margin-top: px;
+  margin-bottom: 80px;
+}
+.latest-deal-description h1 {
+  padding-bottom: 10px;
+}
+
+/* latest deal card section */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.left-cards {
+  max-width: 366px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-1-text {
+  color: rgb(255, 255, 255);
+  font-family: Noto Serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 65px 47px 50px 47px;
+  text-align: center;
+}
+.card-1-text a {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  text-decoration-line: underline;
+}
+.card-2-text {
+  color: rgb(255, 255, 255);
+  font-family: Noto Serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 65px 47px 50px 47px;
+  text-align: center;
+}
+.card-1 {
+  max-width: 350px;
+  height: 200px;
+  border-radius: 5px;
+  background-image: url(../images/deal-bloom.png);
+  background-size: cover;
+}
+.card-2 {
+  max-width: 350px;
+  height: 200px;
+  border-radius: 5px;
+  background-image: url(../images/deal-ana.png);
+  background-size: cover;
+}
+.card-2-text a {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  text-decoration-line: underline;
+}
+.right-card {
+  max-width: 750px;
+  height: 420px;
+  border-radius: 10px;
+  background-image: url(../images/deal-zabo.png);
+  background-size: cover;
+}
+.right-card-text {
+  color: rgb(255, 255, 255);
+  font-family: Noto Serif;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 200px 100px;
+  text-align: center;
+}
+.right-card-text a {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  text-decoration-line: underline;
 }
 /* responsive style  */
 
@@ -248,5 +342,23 @@
   }
   .plant-lover-description ul {
     margin-left: 15px;
+  }
+  /* latest deal responsive */
+  .latest-deal-description {
+    margin-top: 200px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .right-card {
+    max-width: 100%;
+    height: 250px;
+    margin-top: 20px;
+  }
+  .right-card-text {
+    padding: 100px 10px;
+    font-size: 2rem;
   }
 }
