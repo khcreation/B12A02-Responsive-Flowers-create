@@ -345,7 +345,7 @@
   }
   /* latest deal responsive */
   .latest-deal-description {
-    margin-top: 200px;
+    margin-top: 300px;
   }
   .cards {
     flex-direction: column;
@@ -354,11 +354,14 @@
   }
   .right-card {
     max-width: 100%;
-    height: 250px;
+    height: 230px;
     margin-top: 20px;
   }
   .right-card-text {
     padding: 100px 10px;
-    font-size: 2rem;
+    font-size: 30px;
+  }
+  .right-card-text br {
+    display: none;
   }
 }
