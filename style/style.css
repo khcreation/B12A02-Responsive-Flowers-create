@@ -244,15 +244,17 @@
 .card-1 {
   max-width: 350px;
   height: 200px;
-  border-radius: 5px;
-  background-image: url(../images/deal-bloom.png);
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url(../images/deal-bloom.png);
   background-size: cover;
 }
 .card-2 {
   max-width: 350px;
   height: 200px;
-  border-radius: 5px;
-  background-image: url(../images/deal-ana.png);
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url(../images/deal-ana.png);
   background-size: cover;
 }
 .card-2-text a {
@@ -266,8 +268,9 @@
 .right-card {
   max-width: 750px;
   height: 420px;
-  border-radius: 10px;
-  background-image: url(../images/deal-zabo.png);
+  border-radius: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url(../images/deal-zabo.png);
   background-size: cover;
 }
 .right-card-text {
@@ -285,6 +288,51 @@
   font-weight: 600;
   text-align: left;
   text-decoration-line: underline;
+}
+
+/* join-section style */
+.join-section {
+  max-width: 1440px;
+  max-height: 530px;
+  margin: 0px auto;
+  margin-top: 120px;
+  text-align: center;
+
+  background-image: url(../images/news-letter-bg.png);
+
+  background-size: cover;
+}
+.join-section-title {
+  color: rgb(255, 255, 255);
+  font-family: Noto Serif;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 195px 300px 0px 300px;
+  text-align: center;
+}
+.join-section-input {
+  width: 400px;
+  height: 50px;
+  padding: 8px 20px;
+  border: none;
+}
+.join-section-box {
+  padding-left: 370px;
+  padding-right: 300px;
+  padding-bottom: 190px;
+  display: flex;
+  gap: 0px;
+}
+.join-button {
+  color: rgb(255, 255, 255);
+  background: rgb(233, 90, 8);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  width: 150px;
+  height: 50px;
+  border: none;
 }
 /* responsive style  */
 
@@ -353,15 +401,78 @@
     gap: 5px;
   }
   .right-card {
-    max-width: 100%;
-    height: 230px;
-    margin-top: 20px;
+    width: 361px;
+    height: 192px;
+
+    margin-top: 10px;
   }
   .right-card-text {
-    padding: 100px 10px;
-    font-size: 30px;
+    padding: 60px 15px;
+    font-size: 1.5rem;
+  }
+  .card-1 {
+    max-width: 361px;
+    height: 192px;
+    margin: 0px auto;
+  }
+  .card-1-text {
+    padding: 60px 15px;
+    font-size: 1.5rem;
+  }
+  .card-2 {
+    max-width: 361px;
+    height: 192px;
+    margin: 0px auto;
+  }
+  .card-2-text {
+    padding: 60px 15px;
+    font-size: 1.5rem;
   }
   .right-card-text br {
-    display: none;
+    /* display: none; */
+  }
+  /* join section responsive */
+
+  .join-section {
+    width: 100%;
+    height: 275px;
+    /* margin: 0px auto; */
+    margin-right: 0px;
+    margin-left: 0px;
+
+    margin-top: 50px;
+    text-align: center;
+    background-size: cover;
+
+    background-size: cover;
+  }
+  .join-section-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 110px 35px 0px 35px;
+    text-align: center;
+  }
+  .join-section-input {
+    width: 400px;
+    height: 50px;
+    padding: 8px 5px;
+    border: none;
+    margin-right: 0px;
+  }
+  .join-section-box {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 0px;
+  }
+  .join-button {
+    font-weight: 500;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    padding: 15px 10px;
+    margin-left: 0px;
   }
 }
