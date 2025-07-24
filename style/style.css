@@ -3,6 +3,15 @@
   padding: 0px;
   box-sizing: border-box;
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* shared style */
 
 .text-color-1 {
@@ -26,9 +35,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin: 0px auto;
+  margin-top: 20px;
   max-width: 1140px;
-  margin: 0px auto;
 }
 
 .nav-list ul {
@@ -183,6 +193,7 @@
   position: static;
 }
 .img-2 {
+  animation: spin 7s linear infinite;
   position: absolute;
   width: 60%;
   bottom: 70%;
@@ -390,9 +401,22 @@
   justify-content: space-between;
   margin-left: 6rem;
 }
-.social-media-section img {
+
+/* .social-media-section img {
   width: 36px;
   height: 36px;
+} */
+
+.icon-4,
+.icon-1,
+.icon-3 {
+  width: 30px;
+  height: 36px;
+}
+.icon-2 {
+  width: 15px;
+  height: 5px;
+  padding-top: 10px;
 }
 
 /* responsive style  */
@@ -454,7 +478,10 @@
   }
   /* latest deal responsive */
   .latest-deal-description {
-    margin-top: 300px;
+    margin-top: 400px;
+  }
+  .latest-deal-description h1 {
+    font-size: 1.5rem;
   }
   .cards {
     flex-direction: column;
